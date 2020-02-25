@@ -6,7 +6,7 @@ class Particle {
         };
         this.rays = [];
 
-        for (let a = 0; a < 360; a += 1) {
+        for (let a = 0; a < 20; a += 1) {
             this.rays.push(new Ray(this.pos, a * Math.PI / 180));
         }
 
@@ -53,7 +53,7 @@ class Particle {
 
     show() {
 
-
+        context.lineWidth = 7;
         context.beginPath();
         context.arc(this.pos.x, this.pos.y, 5, 0, 2 * Math.PI);
         context.stroke();

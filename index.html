@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <canvas id="game" height="625" width="625"></canvas>
-    <script src="script.js"></script>
-    <script src="boundry.js"></script>
-    <script src="particle.js"></script>
-    <script src="ray.js"></script>
-
-</body>
-
+    <body>
+        <div id="desktop">
+            <button onclick="toggleview()">
+                Toggle (Or click the canvas!)
+            </button>
+            <br />
+            <canvas id="game" height="625" width="625"></canvas>
+        </div>
+        <div id="mobile">
+            <h2>This is not availible for mobile as this breaks the point</h2>
+        </div>
+        <script src="script.js"></script>
+        <script src="boundry.js"></script>
+        <script src="particle.js"></script>
+        <script src="ray.js"></script>
+    </body>
 </html>
